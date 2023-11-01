@@ -1,3 +1,5 @@
+document.querySelector('.copyright').innerHTML = `© ${new Date().getFullYear()}`
+
 const swiper = new Swiper('.rew-sl', {
   // Optional parameters
   slidesPerView: 1,
@@ -26,7 +28,6 @@ const swiper = new Swiper('.rew-sl', {
   //     modal.classList.remove('-show')
   //   }
   // })
-
 
   Array.from(document.querySelectorAll('.header-btn')).forEach(el => {
     el.addEventListener('click', () => {
