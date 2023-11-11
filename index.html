@@ -25,7 +25,21 @@
               <a href="tel:+78126800888">+7 8126 80 08 88</a>
               <a href="tel:+79219305458">+7 921 930 54 58</a>
             </div>
-            <button class="btn header-btn">Заказать обратный звонок</button>
+            <div class="wrap-mobile-tel">
+              <div class="btn-header-tel">
+                <svg viewBox="0 0 1446 1436" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1131.41 912.902L851.969 967.05C663.215 872.31 546.619 763.484 478.764 593.845L531.009 313.594L432.25 51H177.729C101.218 51 40.9688 114.226 52.3957 189.879C80.9229 378.742 165.035 721.176 410.908 967.05C669.112 1225.25 1040.99 1337.3 1245.67 1381.83C1324.71 1399.03 1394.81 1337.37 1394.81 1256.49V1013.27L1131.41 912.902Z" stroke="#e52e2e" stroke-width="101.783" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+              </div>
+              <div class="mobile-tel-list">
+                <a href="tel:+78126800888">+7 8126 80 08 88</a>
+                <a href="tel:+79219305458">+7 921 930 54 58</a>
+              </div>
+            </div>
+            <button class="btn header-btn btn-header-feedbeack">
+              <span>Заказать обратный звонок</span>
+              <span>Обратный звонок</span>
+            </button>
           </div>
         </div>
       </div>
@@ -35,7 +49,7 @@
         <div class="container">
           <div class="box-content box-top">
             <div class="box-top-content">
-              <h1 class="box-top-title">Грузоперевозки по России от 500 кг</h1>
+              <h1 class="box-top-title">Грузоперевозки по России от 500&nbsp;кг</h1>
               <p>Быстрая доставка</p>
               <p>Надежный партнер</p>
               <p>Собственный транспорт</p>
@@ -49,7 +63,7 @@
                 <form action="">
                   <label>
                     <span>Номер телефона</span>
-                    <input type="text">
+                    <input type="tel" data-tel-input  maxlength="18">
                   </label>
                   <button class="btn">Узнать стоимость</button>
                 </form>
@@ -109,22 +123,22 @@
               <div class="box-delivery-img">
                 <img src="img/7.svg" alt="">
               </div>
-              <div class="box-delivery-text">Грузовик 19 паллет, 58 м<sup>3</sup></div>
+              <div class="box-delivery-text">Грузовик 19 паллет, 58&nbsp;м<sup>3</sup></div>
               <button class="btn box-delivery-btn">Заказать</button>
             </div>
             <div class="box-delivery-item">
               <div class="box-delivery-img">
                 <img src="img/17.svg" alt="">
               </div>
-              <div class="box-delivery-text">23 паллеты, 70 м<sup>3</sup> ГИДРОЛИФТ</div>
+              <div class="box-delivery-text">23 паллеты, 70&nbsp;м<sup>3</sup> ГИДРОЛИФТ</div>
               <button class="btn box-delivery-btn">Заказать</button>
             </div>
             <div class="box-delivery-item">
               <div class="box-delivery-img">
                 <img src="img/8.svg" alt="">
               </div>
-              <div class="box-delivery-text">Грузовик( 19 паллет, 58 м<sup>3</sup> + прицеп 19 паллет, 58 м<sup>3</sup>
-                ) + 38 паллет, 116 м<sup>3</sup> </div>
+              <div class="box-delivery-text">Грузовик( 19 паллет, 58&nbsp;м<sup>3</sup> + прицеп 19 паллет, 58&nbsp;м<sup>3</sup>
+                ) + 38 паллет, 116&nbsp;м<sup>3</sup> </div>
               <button class="btn box-delivery-btn">Заказать</button>
             </div>
           </div>
@@ -268,7 +282,7 @@
               </label>
               <label>
                 <span>Ваш номер телефона</span>
-                <input type="text">
+                <input type="tel" data-tel-input  maxlength="18">
               </label>
               <button class="btn">Отправить</button>
             </form>
@@ -297,7 +311,7 @@
           </label>
           <label>
             <span>Ваш номер телефона</span>
-            <input type="text">
+            <input type="tel" data-tel-input  maxlength="18">
           </label>
           <button class="btn">Отправить</button>
         </form>
@@ -328,15 +342,15 @@
               <a href="tel:+79219305458">+7 921 930 54 58</a>
             </div>
           </div>
+          <div class="copyright -mobile"></div>
 
         </div>
       </div>
     </div>
   </footer>
 
-  <script src="js/jquery.js"></script>
-  <!-- <script src="js/swiper.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/phoneinput.js"></script>
   <script src="js/main.js"></script>
 </body>
 

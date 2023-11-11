@@ -1,4 +1,4 @@
-document.querySelector('.copyright').innerHTML = `© ${new Date().getFullYear()}`
+Array.from(document.querySelectorAll('.copyright')).forEach(el => el.innerHTML = `© ${new Date().getFullYear()}`)
 
 const swiper = new Swiper('.rew-sl', {
   // Optional parameters
@@ -19,15 +19,23 @@ const swiper = new Swiper('.rew-sl', {
 });
 
 (function () {
-  // const modal = document.querySelector('.wrap-box-modal');
+  // const phone = document.querySelector('.mobile-tel-list');
 
   // document.addEventListener('click', (e) => {
-  //   const withinBoundaries = e.composedPath().includes(modal);
-  //   console.log(modal.classList.contains('-show'))
-  //   if (!withinBoundaries && modal.classList.contains('-show')) {
-  //     modal.classList.remove('-show')
+  //   const withinBoundaries = e.composedPath().includes(phone);
+  //   console.log(phone.classList.contains('-show'))
+  //   console.log(e.target.classList.contains)
+  //   if (!withinBoundaries && phone.classList.contains('-show')) {
+  //     phone.classList.remove('-show')
   //   }
   // })
+
+  document.querySelector('.btn-header-tel').addEventListener('click', function() {
+    if(this.nextSibling.nextElementSibling.classList.contains('-show'))
+      this.nextSibling.nextElementSibling.classList.remove('-show')
+    else
+      this.nextSibling.nextElementSibling.classList.add('-show')
+  })
 
   Array.from(document.querySelectorAll('.header-btn')).forEach(el => {
     el.addEventListener('click', () => {
